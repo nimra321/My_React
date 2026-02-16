@@ -7,6 +7,8 @@ import Counter from './component/Counter';
 import ToggleText from './component/ToggleText';
 import LikeButton from './component/LikeButton';
 import UserProfile from './component/UserProfile';
+import Student from './component/Student';
+import InputExample from './component/InputExample';
 
 function App() {
 
@@ -33,6 +35,8 @@ function App() {
       <ToggleText />
       <LikeButton />
       <UserProfile />
+      <Student />
+      <InputExample />
        <Props name = "Nimra" age = "24" city = "Lahore" label = "Submit" />
       <Bye />
      <button onClick={handleClick}>Click</button>
