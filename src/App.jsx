@@ -3,6 +3,10 @@ import './App.css'
 import Hello from './component/Hello'
 import Bye from './component/Bye';
 import Props from './component/Props';
+import Counter from './component/Counter';
+import ToggleText from './component/ToggleText';
+import LikeButton from './component/LikeButton';
+import UserProfile from './component/UserProfile';
 
 function App() {
 
@@ -25,6 +29,10 @@ function App() {
     <>
       <h1 style={nameStyle}>Nimra Jahangir, { name } </h1>
       <Hello />
+      <Counter />
+      <ToggleText />
+      <LikeButton />
+      <UserProfile />
        <Props name = "Nimra" age = "24" city = "Lahore" label = "Submit" />
       <Bye />
      <button onClick={handleClick}>Click</button>
