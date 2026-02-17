@@ -9,6 +9,9 @@ import LikeButton from './component/LikeButton';
 import UserProfile from './component/UserProfile';
 import Student from './component/Student';
 import InputExample from './component/InputExample';
+import First from './component/First';
+import Timer from './component/Timer';
+import WindowSizeTraker from './component/WindowSizeTraker';
 
 function App() {
 
@@ -39,6 +42,9 @@ function App() {
       <InputExample />
        <Props name = "Nimra" age = "24" city = "Lahore" label = "Submit" />
       <Bye />
+      <First />
+      <Timer />
+      <WindowSizeTraker />
      <button onClick={handleClick}>Click</button>
       <button onClick={() => alert("Hello from inline function!") }>Say Hello</button>
       <br />
