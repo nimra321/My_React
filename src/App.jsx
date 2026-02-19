@@ -12,6 +12,7 @@ import InputExample from './component/InputExample';
 import First from './component/First';
 import Timer from './component/Timer';
 import WindowSizeTraker from './component/WindowSizeTraker';
+import Users from './component/Users';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
       <First />
       <Timer />
       <WindowSizeTraker />
+      <Users />
      <button onClick={handleClick}>Click</button>
       <button onClick={() => alert("Hello from inline function!") }>Say Hello</button>
       <br />
