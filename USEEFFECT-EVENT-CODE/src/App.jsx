@@ -1,3 +1,5 @@
+import AutoSaveForm from "./AutoSaveForm"
+// import Timer from "./Timer"
 
 
 function App() {
@@ -6,7 +8,8 @@ function App() {
 
   return (
     <>
-
+      {/* <Timer /> */}
+      <AutoSaveForm />
     </>
   )
 }
