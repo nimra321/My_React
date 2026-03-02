@@ -1,4 +1,5 @@
 import Counter from "./Counter";
+import Form from "./Form";
 import Test from "./Test";
 function App() {
 
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Test />
       <Counter />
+      <Form />
     </div>
   )
 }
