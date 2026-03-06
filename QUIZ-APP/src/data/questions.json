@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "question": "React is mainly used for?",
+        "options": [
+            "Styling",
+            "Mobile Apps",
+            "Building UI",
+            "None"
+        ],
+        "answer": "Building UI"
+    },
+    {
+        "id": 2,
+        "question": "Which of the following is not a React feature?",
+        "options": [
+            "Components",
+            "Virtual DOM",
+            "Server-Side Rendering",
+            "None"
+        ],
+        "answer": "Server-Side Rendering"
+    },
+    {
+        "id": 3,
+        "question": "Which hook is used for state?",
+        "options": [
+            "useEffect",
+            "useContext",
+            "useReducer",
+            "useState"
+        ],
+        "answer": "useState"
+    }
+]
