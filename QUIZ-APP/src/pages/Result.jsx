@@ -6,6 +6,25 @@ function Result() {
 
     const { state, dispatch } = useContext(QuizContext);
 
+    const percentage = Math.round((state.score / state.questions.lenght ) * 100);
+
+    useEffect(() => {
+        const entry = {
+            name: state.username,
+            score: state.score,
+            percentage ,
+            date: new Date().toLocaleString()
+        }
+
+        const stored = JSON.parse(localStorage.getItem("leaderboard")) || [];
+        const updated = [...stored, entry];
+        updated.sort((a,b) => b.score - a.score);
+
+        localStorage.setItem("leaderboard", JSON.stringify(stored));
+
+    }, []);
+
+
   return (
     <div className="container text-center mt-5">
         <div className="card shadow p-5">
@@ -16,7 +35,9 @@ function Result() {
                 <Link to="/leaderboard" className="btn btn-primary">
                    View Leaderboard
                 </Link>
-                <Link to="/" className="btn btn-warning">
+                <Link to="/" 
+                onClick={() => dispatch({type: "RESET"})}
+                className="btn btn-warning">
                     Home
                 </Link>
             </div>
