@@ -6,7 +6,7 @@ function Result() {
 
     const { state, dispatch } = useContext(QuizContext);
 
-    const percentage = Math.round((state.score / state.questions.lenght ) * 100);
+    const percentage = Math.round((state.score / state.questions.length ) * 100);
 
     useEffect(() => {
         const entry = {
@@ -20,11 +20,10 @@ function Result() {
         const updated = [...stored, entry];
         updated.sort((a,b) => b.score - a.score);
 
-        localStorage.setItem("leaderboard", JSON.stringify(stored));
+        localStorage.setItem("leaderboard", JSON.stringify(updated));
 
     }, []);
-
-
+    
   return (
     <div className="container text-center mt-5">
         <div className="card shadow p-5">

@@ -23,7 +23,7 @@ function Home() {
         placeholder="Enter your name"
         className="form-control w-50 mx-auto mb-3"
         type="text"
-        autocomplete="off"
+        autoComplete="off"
         onChange={(e) => setName(e.target.value)}
       />
 
