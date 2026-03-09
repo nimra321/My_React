@@ -12,6 +12,13 @@ function Quiz() {
     const navigate = useNavigate();
     const { time, reset } = useTimer(15);
 
+    useEffect(() => {
+        if(time === 0) {
+            dispatch({ type: "ANSWER", payload: false });
+            reset();
+        }
+    })
+
     if(!questions || questions.length === 0) {
         return <h2 className="text-center mt-5">Loading Questions...</h2>
     }
@@ -31,7 +38,7 @@ function Quiz() {
 
   return (
     <div className="container mt-4">
-        <Timer time={time} />
+        <Timer time={time}  />
         <ProgressBar current={index} total={questions.length} />
         <QuestionCard 
             question={current.question}
