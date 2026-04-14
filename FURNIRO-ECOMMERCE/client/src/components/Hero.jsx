@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className="bg-gray-100 h-[100vh] flex items-center justify-center relative">
+    <div className="bg-gray-100 h-[100vh] flex items-center justify-end relative">
       
       {/* Background Image */}
       <img 
@@ -10,7 +10,7 @@ function Hero() {
       />
 
       {/* Card */}
-      <div className="bg-[#f9f1e7] p-10 max-w-md rounded-md relative z-10">
+      <div className="bg-secondary p-10 max-w-md rounded-md relative z-10 mr-10">
         
         <p className="text-sm tracking-widest">New Arrival</p>
 

@@ -1,11 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
+import Shop from '../pages/Shop'
+import Layout from '../outlet/Outlet'
 
 function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={ <Home /> } />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="shop" element={<Shop />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
