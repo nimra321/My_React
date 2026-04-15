@@ -23,7 +23,9 @@ function Hero() {
         </p>
 
         <button className="mt-5 bg-primary text-white px-6 py-2">
-          BUY NOW
+          <a href="/shop" className="text-white no-underline">
+            BUY NOW
+          </a>
         </button>
 
       </div>

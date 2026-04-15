@@ -16,10 +16,8 @@ function Navbar() {
         show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
       }`}
     >
-      {/* Main Navbar */}
       <div className="flex justify-between items-center px-6 md:px-10 py-4">
         
-        {/* Logo */}
         <img
           src="/assets/furniroLogo.png"
           className="h-[35px] md:h-[41px] object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
